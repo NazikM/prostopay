@@ -56,12 +56,6 @@ class HashMap:
         bucket.append((key, value))
         self.size += 1
 
-        # for pair in self.hash_map[index]:
-        #     if pair[0] == key:
-        #         pair[1] = value  # Update value if key already exists
-        #         return
-        # self.hash_map[index].append([key, value])
-
     def get(self, key):
         index = self._hash(key)
         if self.hash_map[index] is None:
